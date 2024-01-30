@@ -23,7 +23,9 @@ asm_main:
         enter   0,0               ; setup routine
         pusha
 
-		; TODO: add code
+	dump_regs 1	; TODO: add code
+        call print_nl
+        dump_regs 2
 
         popa
         mov     eax, 0            ; return back to C
